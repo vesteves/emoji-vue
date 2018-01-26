@@ -1,7 +1,7 @@
 <template>
   <div class="emoji-vue-wraper" v-bind:id="id">
     <div class="emoji-picker-container">
-      <textarea cols="50" v-model="value" rows="10" data-vue-emojiable="true" class="emoji-vue-textarea"></textarea>
+      <textarea cols="50" v-model="value" rows="10" data-vue-emojiable="true" class="textarea-emoji-fleekus"></textarea>
     </div>
   </div>
 </template>
@@ -78,11 +78,25 @@ export default {
 </script>
 
 <style>
+  .emoji-picker-container {
+  width:100%!important;
+  }
+ .textarea-emoji-fleekus {
+    background:#fff!important;
+    border-radius:5px!important;
+    width:100%!important;
+    height:unset!important;
+    color: #666;
+    font-size: 15px;
+    padding: 11px 40px 9px 15px;
+    height:44px!important;
+ }
  i.emoji-picker-icon.emoji-picker {
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAB+ElEQVRYhe2WPS8EURSGHxQkFOIrNHaRbFT8BDWdwkfYWk2Cf+CnIAoJkRAdtXJVW4hkKZesECJ2RzHvNbOzd3bvjO14k5vZnI/3nHPv2XsP/OOvoyOh/RSwAswBM0C/5M9AAbgCjoC7NuX3gyxwCFQBr8WqAgdApl3B88CLyD+BY8mmgV6tacmOZePJZ/23wXeBmghPgJyDT062nnx30gbPi6CqRJJiV741UuxEhmDbU1egJDzgFb+BnXFIsO0GC8CD1rzFJ05/Kq4D1+BT+Fv3Sf2ZPxB0esniF6fPiesLmIg6dVqIViQ/A4ohudci8Th9UVxd4m6JS5HlI/J5/MpK2I+gmT4vzguXBB5l7PKXc0WO+KNrwIeM+9qYQJ8436MKWw+Ys0z6TjSDidPQJ7YEnvQdi8hngY0YnzDfhmzDGNW33DRNIa4JzyVfauK7LJvziDy2CW3VXOu7aEkMYA8YtviNSIclkOG6svg1YBL7RdQD3OJXUsSvdhAY0u+idAWgO+QXvoiyLgmA/SoG/40wSdhWARiP+CS+ik0g8xhFX8IeYAu4Ad60boBN6iuH4DGqkGJAWad9z/FaCn/Af4rNQHKK+0Bitr0GbKcNbpB2JKvwi8qjyOA3kctQ+gXs43jmSa/bLLBKMJYPSF6mfiy/T8j7jz+Mb+FSr4ihuoIZAAAAAElFTkSuQmCC') no-repeat center center;
   width: 24px;
   height: 24px;
   opacity: 0.5;
+  margin-top:4px;
   cursor: pointer
  }
 </style>
